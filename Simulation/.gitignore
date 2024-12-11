@@ -1,0 +1,4 @@
+# Simulink code generation folders
+slprj/
+sccprj/
+*.pdf
