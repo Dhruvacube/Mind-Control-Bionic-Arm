@@ -38,3 +38,5 @@ net = trainnet(adsTrain,net,"crossentropy",options);
 YTest = minibatchpredict(net,adsTest);
 YTestFinal = scores2label(YTest,classNames);
 plotconfusion(testLabels,YTestFinal);
+[C,order] = confusionmat(testLabels,YTestFinal);
+stats = statsOfMeasure(C, 1);
